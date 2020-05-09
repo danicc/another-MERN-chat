@@ -1,0 +1,19 @@
+.userProfile {
+  display: flex;
+  flex-direction: 'row';
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.userAvatarImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.userNameTxt {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+

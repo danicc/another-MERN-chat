@@ -1,0 +1,9 @@
+.chatCardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.chatCardHeader__title {
+  flex: 1;
+}

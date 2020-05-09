@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sockets</title>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <h1>Mira la consola</h1>
+    <script charset="utf-8">
+      var socket = io.connect('http://localhost:3000', {
+        forceNew: true,
+      })
+    </script>
+  </body>
+</html>

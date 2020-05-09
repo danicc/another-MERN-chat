@@ -1,0 +1,17 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 125px;
+  border-bottom: 2px solid grey;
+  margin-bottom: 0.5rem;
+}
+.headerTitle {
+  display: inline-block;
+  margin: 0 1rem;
+  flex: 1;
+}
+.headerUser {
+  justify-self: flex-end;
+}
