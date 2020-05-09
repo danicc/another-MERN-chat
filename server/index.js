@@ -18,7 +18,6 @@ const server = http.Server(app);
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use('/app', express.static(config.STATIC_PATH));
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
