@@ -1,14 +1,37 @@
-## Express Basic App
+## Another MERN Chat application
 
-This is a very simple express application that has been built just to have fun with nodejs and express.
+Chat application based on MERN(Mongo, Express, React, Node) stack, I chose this stack because it allows us to write Javascript code on the backend and frontend and also I like writing code for the client with React.
 
-I deployed this API on heroku, you can take a look at this [link](https://esquinazi-nodejs-react-chat.herokuapp.com/messages) to play around.
+### Description
+
+Is a very basic chat application, my intention here is to create an http server without the need to follow Restful constraints or anything, it helped me to understand nodejs and express features and more important to have fun. Also I tried to keep the client application simple, so it doesn't use any CSS-in-JS library and as I don't have plans to scale this application or use it in the real world I did't write tests.(You should write them)
+
+### Deployed
+
+It is deployed on heroku you can take a look at this [link](https://another-mern-chat.herokuapp.com/)
+
+### Preview
+
+<div style="display: flex; flex-direction: row;">
+<img src="./images/users.png"
+     alt="users"
+     style="width: 200px" />
+<img src="./images/chats.png"
+     alt="chats"
+     style="width: 200px; margin: 0 0.2rem" />
+<img src="./images/channel.png"
+     alt="channel"
+     style="width: 200px" />
+
+</div>
 
 ### Run it locally
 
-First of all you are going to need a mongo database I used the [mongodb altas](https://www.mongodb.com/cloud/atlas) platform for this. Later you will need to create a user/password in order to connect the server with the DB.
+#### Run the server
 
-1- Create `.env` file and your variables
+1- Create mongo database: I used the [mongodb altas](https://www.mongodb.com/cloud/atlas) platform for creating and managing one.Later you will need to create a user/password in order to connect the server with the DB.
+
+2- Create `.env` in the root path `/` file and your variables
 
 ```
 DB_NAME=core-xyz.gcp.mongodb.net
@@ -20,35 +43,24 @@ DB_PASSWORD=db_password_value
 
 ```
 npm install
-npm run start:dev
+npm run dev:server
 ```
 
-### Reference
+#### Run the server
 
-Based on a [nodejs](https://platzi.com/clases/backend-js/) platzi course.
+1- Move to client project `cd ./client` and then create a `.env` file like the following
 
-### Full React Chat App
+```
+DEV_API="http://localhost:8000"
+PROD_API="https://esquinazi-nodejs-react-chat.herokuapp.com"
+```
 
-You will find an http server built with nodejs and express and this is using a mongo database. Also in chat project you will find the client for this API.
+2- Install dependencies and run de project.
 
-### Description
-
-My intention here is to create a very basic http server without the need to follow Restfull constraints or anything is just to try nodejs and express features and more important to have fun.
-I have coded the client app with the same intentions but I put in there a little more effort than for the server.
-
-Hope you enjoy it.
-
-### Preview
-
-<img src="./images/users.png"
-     alt="users"
-     style="width: 300px" />
-<img src="./images/chats.png"
-     alt="chats"
-     style="width: 300px" />
-<img src="./images/channel.png"
-     alt="channel"
-     style="width: 300px" />
+```
+npm install
+npm start
+```
 
 ### Reference
 
