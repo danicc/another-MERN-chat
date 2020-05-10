@@ -27,7 +27,7 @@ It is deployed on heroku you can take a look at this [link](https://another-mern
 
 ### Run it locally
 
-#### Run the server
+#### Server
 
 1- Create mongo database: I used the [mongodb altas](https://www.mongodb.com/cloud/atlas) platform for creating and managing one.Later you will need to create a user/password in order to connect the server with the DB.
 
@@ -46,7 +46,7 @@ npm install
 npm run dev:server
 ```
 
-#### Run the server
+#### Client
 
 1- Move to client project `cd ./client` and then create a `.env` file like the following
 
